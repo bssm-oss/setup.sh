@@ -23,8 +23,8 @@ sudo apt update && sudo apt install -y git
 Clone this repository (replace with the actual repo URL and directory name):
 
 ```bash
-git clone <repository-url>
-cd <repository-dir>
+git clone https://github.com/HyunwooKiim/setup.sh
+cd setup.sh
 ```
 
 ## Quick Start
