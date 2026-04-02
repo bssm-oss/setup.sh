@@ -6,11 +6,26 @@ A flexible bash script for automated installation of Java, Docker, and Docker Co
 
 ## Features
 
-- **Java Installation**: Install any OpenJDK version (8, 11, 17, 21, etc.)
+- **Java Installation**: Install any OpenJDK version (8, 17, 21, 25, etc.)
 - **Docker Installation**: Install Docker CE with proper user permissions
 - **Docker Compose**: Install Docker Compose plugin
 - **Flexible Options**: Skip any component with simple flags
 - **Order-Independent**: Options can be specified in any order
+
+## Before using
+
+On Debian/Ubuntu systems, ensure git is installed before cloning or running scripts from a repository.
+
+```bash
+sudo apt update && sudo apt install -y git
+```
+
+Clone this repository (replace with the actual repo URL and directory name):
+
+```bash
+git clone <repository-url>
+cd <repository-dir>
+```
 
 ## Quick Start
 
