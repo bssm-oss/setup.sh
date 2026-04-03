@@ -212,7 +212,6 @@ if [[ "$INSTALL_DOCKER" == "true" ]]; then
 
     # Add user to docker group
     sudo usermod -aG docker "$CURRENT_USER"
-    sudo usermod -aG docker ubuntu
     echo ""
 else
     echo ">>> Skipping Docker installation"
