@@ -90,6 +90,7 @@ INSTALL_JAVA=true
 INSTALL_DOCKER=true
 INSTALL_COMPOSE=true
 SYSTEM_UPDATE=true
+CURRENT_USER=$(whoami)
 
 # Check for guide command
 if [[ "$1" == "guide" ]]; then
@@ -210,6 +211,7 @@ if [[ "$INSTALL_DOCKER" == "true" ]]; then
     sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
     # Add user to docker group
+    sudo usermod -aG docker "$CURRENT_USER"
     sudo usermod -aG docker ubuntu
     echo ""
 else
